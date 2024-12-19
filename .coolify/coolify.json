@@ -1,0 +1,22 @@
+{
+    "version": "3.0.0",
+    "services": {
+        "flask-qa-api": {
+            "buildpack": {
+                "builder": "heroku/buildpacks:20",
+                "dockerfile": "./Dockerfile"
+            },
+            "port": 5000,
+            "environment": {
+                "FLASK_ENV": "production"
+            },
+            "healthCheck": {
+                "path": "/api/users",
+                "port": 5000
+            },
+            "autodeploy": true,
+            "minInstances": 1,
+            "maxInstances": 1
+        }
+    }
+} 
