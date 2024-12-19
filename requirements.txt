@@ -1,5 +1,5 @@
 flask==2.0.1
 flask-restx==0.5.1
-Werkzeug==2.0.3
+Werkzeug==3.0.6
 pytest==7.4.2
 requests==2.32.2 
