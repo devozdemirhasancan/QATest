@@ -67,7 +67,7 @@ python -m pytest test_app.py
 
 ### Swagger UI
 
-API'yi test etmek için tarayıcınızda `http://localhost:5000` adresine gidin. Burada tüm endpoint'leri görebilir ve test edebilirsiniz.
+API'yi test etmek için tarayıcınızda `http://localhost:3000` adresine gidin. Burada tüm endpoint'leri görebilir ve test edebilirsiniz.
 
 ### Curl Örnekleri
 
@@ -78,10 +78,10 @@ curl http://localhost:5000/api/users
 # Yeni kullanıcı oluştur
 curl -X POST -H "Content-Type: application/json" \
      -d '{"name":"Test User","email":"test@example.com"}' \
-     http://localhost:5000/api/users
+     http://localhost:3000/api/users
 
 # Belirli bir ürünü getir
-curl http://localhost:5000/api/products/1
+curl http://localhost:3000/api/products/1
 ```
 
 ## Coolify Deployment
