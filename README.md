@@ -8,7 +8,6 @@ Bu proje, QA test senaryolarını test etmek için oluşturulmuş basit bir REST
 - OpenAPI/Swagger dokümantasyonu
 - Docker desteği
 - Coolify deployment yapılandırması
-- Otomatik test senaryoları
 - Mock veri desteği
 
 ## API Endpoints
@@ -55,14 +54,6 @@ pip install -r requirements.txt
 python app.py
 ```
 
-## Test
-
-Testleri çalıştırmak için:
-
-```bash
-python -m pytest test_app.py
-```
-
 ## API Kullanımı
 
 ### Swagger UI
@@ -73,7 +64,7 @@ API'yi test etmek için tarayıcınızda `http://localhost:3000` adresine gidin.
 
 ```bash
 # Tüm kullanıcıları getir
-curl http://localhost:5000/api/users
+curl http://localhost:3000/api/users
 
 # Yeni kullanıcı oluştur
 curl -X POST -H "Content-Type: application/json" \
